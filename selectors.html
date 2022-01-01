@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTORS</title>
+    <style>
+        *{
+            border: 10px solid red;
+        }
+        div p{
+            background-color: red;
+            color: blue;
+        }
+        div > p{
+            background-color: violet;
+            color: steelblue;
+        }
+        section > p{
+            background-color: red;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        div + p{
+            font-size: 120px;
+            background-color: black;
+        }
+        section + p{
+            font-size: 30px;
+            background-color: orange;
+        }
+        div + h3{  
+            font-size: 20px; 
+            background-color: rgb(137, 130, 238);
+        }
+        div~p{
+            background-color: yellowgreen;
+        }
+        p:first-letter{
+            font-size: 100px;
+        }
+        p::first-line{
+            background-color: seagreen;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>paragraph1</p>
+        <section>
+            <p>paragraph8</p>
+        </section>
+        <p>paragraph2</p>
+        <div>
+            <p>paragraph3</p>
+        </div>
+        <section>
+            <p>paragraph4</p>
+        </section>
+        <p>paragraph5</p>
+        <p>paragraph6</p>
+    </div>
+    <h3>paragraph7 is additional 
+        beacause it is at end
+    </h3>
+    
+</body>
+</html>

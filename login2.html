@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>::Login::</title>
+    <style>
+        .container{
+            text-align: center;
+            border: 3px solid black;
+            background-color: yellow;
+            width: 20rem;
+            border-radius:15px;
+        }
+        .login img {
+            width: 100%;
+        }
+        button {
+            padding: 5px;
+            margin: 35px 30px;
+            width: 40%;
+            border-radius: 4px;
+        }
+        .container {
+            margin-left: 400px;
+            margin-top: 45px;
+        }
+        button:hover{
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form action="action_page.php" method="post">
+        <div class="container">
+          <img src="./images/svec logo.png" alt="Avatar" class="avatar">
+        <!-- </div>
+       -->
+        <!-- <div class="container"> -->
+            <br>
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+          <br><br>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          <br>
+      
+          <button type="submit">Login</button>
+          <br>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+          <button type="button" class="cancelbtn">Cancel</button>
+          <br>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+</body>
+</html>
